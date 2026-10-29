@@ -1,0 +1,282 @@
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgb(4, 22, 16);
+}
+.logo{
+    height: 90px;
+    margin-left: 20px;
+}
+li{
+    padding: 10px;
+    display: inline;
+}
+.leva{
+    display: flex;
+    align-items: center;
+}
+.prava{
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
+}
+nav ul{
+    padding-left: 60px;
+}
+nav ul a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+}
+nav ul a:hover{
+    color: rgb(178, 176, 176);
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+}
+form{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    transition: all 1s;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+.searchbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 42.5px;
+    line-height: 30px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    caret-color: rgb(40, 140, 155);
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    height: 42.5px;
+    width: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(40, 140, 155);
+    font-size: 1.2em;
+    transform: all 1s;
+}
+form:hover{
+    width: 320px;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+form:hover input{
+    display: block;
+}
+form:hover .fa{
+    background-color: rgb(40, 140, 155);
+    color: #fff;
+    box-shadow: 0 0 40px rgb(25, 132, 168);
+}
+.buttonySU{
+    margin-left: 40px;
+}
+.buttonySI{
+    margin-right: 40px;
+}
+.signUp{
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    background-color: #30363f;
+    color: #f0f0f0;
+    height: 40px;
+    width: 90px;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.signUp::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(78, 200, 221), rgb(19, 47, 126));
+    z-index: -1;
+    padding: 2px;
+}
+.signUp:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(78, 200, 221), -40px 0 100px rgb(19, 47, 126);
+}
+.signIn{
+    margin: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: #30363f;
+    color: #f0f0f0;
+    height: 40px;
+    width: 90px;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.signIn::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(78, 200, 221),rgb(19, 47, 126));
+    z-index: -1;
+    padding: 2px;
+}
+.signIn:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px rgb(78, 200, 221), -40px 0 100px rgb(19, 47, 126);
+}
+.glass1{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 45px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 40px;
+    padding-top: 60px;
+    border-radius: 20px;
+    z-index: 10;
+    margin-top: 25px;
+}
+.glass1Nadpis{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #30363f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+.glass1Name{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #30363f;
+}
+.glass1Name input{
+    width: 130px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    border: none;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #30363f;
+    caret-color: #30363f;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-weight: 0;
+}
+.glass1Email{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #30363f;
+}
+.glass1Email input{
+    width: 280px;
+    height: 35px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    border: none;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #30363f;
+    caret-color: #30363f;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+.glass1Password{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #30363f;
+}
+.glass1Password input{
+    width: 280px;
+    height: 35px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    border: none;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #30363f;
+    caret-color: #30363f;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+.buttonRegister{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #30363f;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url(Scene-24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+swipe mezi sign up a sign in 
+nadpis sign up bude mit color gradient viz video 10 tricks
+button login bude mit shadow a border se bude hybat
+bude tam sidebar viz video 10 tricks
